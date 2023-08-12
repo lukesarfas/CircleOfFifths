@@ -7,7 +7,6 @@ const CircleOfFifths = ({ size = 500 }) => {
     const centerX = width / 2;
     const centerY = height / 2;
     const radius = Math.min(centerX, centerY) * 0.85;
-    const textOffset = 20;
 
     const majorKeys = ["C", "G", "D", "A", "E", "B", "F♯", "D♭", "A♭", "E♭", "B♭", "F"];
 
