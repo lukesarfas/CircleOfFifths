@@ -44,7 +44,7 @@ const CircleOfFifths = ({ size = 500 }) => {
     new (window.AudioContext || window.webkitAudioContext)(),
   ); // Single AudioContext instance
 
-  const [frequencies, setFrequencies] = useState(noteFrequencies);
+  const frequencies = noteFrequencies;
 
   const adjustGain = () => {
     const activeNoteCount = Object.values(activeNotes).filter(
@@ -128,7 +128,6 @@ const CircleOfFifths = ({ size = 500 }) => {
   const buttonDistance = 35; // Increase the distance a bit
   const buttonRadius = 12;
 
-  const noteTextFont = "16px sans-serif";
 
   // Styles
   const baseNoteStyle = {
